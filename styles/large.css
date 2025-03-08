@@ -1,0 +1,191 @@
+/* larger.css - Styles for larger screens */
+
+nav {
+    background-color: #222;
+    /* Dark background color */
+    padding: 10px 0;
+}
+
+/* Styling for the unordered list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for nav links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    /* Ensures proper padding clickability */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+#certificate h2 {
+    background-color: aqua;
+    text-align: center;
+}
+
+#denton h2 {
+    background-color: aqua;
+}
+
+#course-work h2 {
+    background-color: aqua;
+}
+
+#courses-buttons {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically (if parent has height) */
+    gap: 10px;
+    /* Space between buttons */
+    margin: 20px auto;
+    /* Add spacing and auto centers in block */
+    text-align: center;
+}
+
+#label-credits {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically (if parent has height) */
+    gap: 10px;
+    /* Space between buttons */
+    margin: 20px auto;
+    /* Add spacing and auto centers in block */
+    text-align: center;
+}
+
+
+/* MOBILE STYLES - Default (Small Screens) */
+#menu-toggle {
+    display: block;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Mobile menu hidden by default */
+nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    width: 100%;
+    text-align: center;
+}
+
+/* When menu is toggled, it will show */
+nav ul.show {
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* Space between sections */
+}
+
+/* Container for side-by-side sections */
+/* Default - Small Screens (Stack sections on top of each other) */
+#top-sections {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    gap: 20px;
+    /* Space between sections */
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Style for both sections */
+#course-work,
+#denton {
+    width: 90%;
+    /* Make sections take most of the screen width */
+    background: #e8e8e8;
+    /* Optional styling */
+    padding: 20px;
+    border-radius: 10px;
+    /* Optional aesthetics */
+    text-align: center;
+}
+
+/* Certificate section should be below */
+#certificate {
+    width: 100%;
+    max-width: 800px;
+    /* Adjust as needed */
+    background: #e8e8e8;
+    /* Optional styling */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    /* Add space above */
+}
+
+
+/* DESKTOP STYLES - Large Screens */
+/* Large Screens - Always Show Menu */
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+        /* Hide menu button */
+    }
+
+    nav ul {
+        display: flex !important;
+        /* Ensure visibility */
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        max-height: unset;
+        /* Remove max-height restriction */
+        background: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    #top-sections {
+        flex-direction: row;
+        /* Place sections side by side */
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #course-work,
+    #denton {
+        flex: 1;
+        /* Make them take equal space */
+        width: auto;
+        /* Reset width for large screens */
+    }
+
+    #courses-list {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 courses per row */
+    }
+}

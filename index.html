@@ -5,71 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 - Web Frontend Development 1 - Juan Martinez</title>
-    <meta name="description" content="Juan Martinez Index page for WDD 131: Dynamic Web Fundamentals BYU-Idaho. 
+    <meta name="description" content="Juan Martinez Index page for WDD 231: Web Frontend Development 1 BYU-Pathway. 
     Assignment to demonstrate prerequisite knowledge by applying HTML and CSS in the design anddevelopment of a home page. 
     Also to apply learning activity concepts including JavaScript to provide some dynamic information.">
     <meta name="author" content="Juan Martinez">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/courses.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Rock+Salt&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - <span class="highlight">Juan Martinez</span></h1>
+        <div id="profile-container">
+            <img src="images/IMG_4271.jpg" alt="Profile Photo" id="mypic">
+            <span>Juan Martinez</span>
+        </div>
+
         <nav>
-            <a href="https://www.linkedin.com/in/juanmartinezd7">LinkedIn</a>
-            <a href="https://byui.instructure.com/">I-Learn</a>
-            <a
-                href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/123?lang=eng&id=p17#p17">Scripture</a>
-            <a href="#">Final Project</a>
+            <button id="menu-toggle">☰</button>
+            <ul id="menu">
+                <li><a href="https://juanmartinezd7.github.io/wdd231/">Home</a></li>
+                <li><a href="https://denton-chamber.org/">Chamber</a></li>
+                <li><a href="https://github.com/juanmartinezd7">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/juanmartinezd7/">LinkedIn</a></li>
+            </ul>
         </nav>
     </header>
+
+    <script src="scripts/menu.js" defer></script>
+    <!--Placing the script before the body ensures the DOM loads first before JavaScript Runs-->
     <main>
-        <div class="card">
+        <h1 id="home">Home</h1>
 
-            <div id="box1">
-                <h2 id="h2a">About Me</h2>
-                <p id="paragraph1">My name is Juan Martinez, I was born in Mexico, but I live in Texas with my wife,
-                    We love to spend time driving in the US roads, and discover new places, we also love to work
-                    together in our garden. my dream is to someday
-                    became a software developer.</p>
-                <img src="images/IMG_9352.jpg" alt="Me" id="mypic">
-                <img src="images/Texas.jpg" alt="Me" id="flag">
-                <h1 id="h1denton">Denton Texas</h1>
-                <p id="flagtext">Official Flag of Texas</p>
-                <p id="paragraph2">Texas is the most populous state in the South-Central region of the United States. It
-                    borders Louisiana to the east, Arkansas to the northeast,
-                    Oklahoma to the north, New Mexico to the west, and an international border with the Mexican states
-                    of Chihuahua, Coahuila, Nuevo León, and Tamaulipas to the
-                    south and southwest. Texas has a coastline on the Gulf of Mexico to the southeast. Covering 268,596
-                    square miles (695,660 km2), and with over 30 million
-                    residents as of 2023, it is the second-largest state by both area and population. Texas is nicknamed
-                    the Lone Star State for its former status as
-                    an independent republic.</p>
-            </div>
-
-            <div id="box2">
-                <h2 id="h2b">Web Dev Resources</h2>
+        <div id="top-sections">
+            <section id="course-work">
+                <h2>Course Work</h2>
                 <ul>
-                    <li><a
-                            href="https://www.theserverside.com/feature/A-guide-to-common-variable-naming-conventions">TheServerSide</a>
-                    </li>
-                    <li><a href="https://developer.mozilla.org/en-US/">mdn</a></li>
-                    <li><a href="https://www.computerhope.com/">Computer Hope</a></li>
-                    <li><a href="https://dev.to/">DEV</a></li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
                 </ul>
-            </div>
+            </section>
+            <section id="denton">
+                <h2>Denton, TX</h2>
+                <img src="images/PecanSquare.jpg" alt="DentonPic" id="PecanSquare">
+                <span>Denton, TX</span>
+            </section>
         </div>
+
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="courses-buttons">
+                <button onclick="filterCourses('all')">All Courses</button>
+                <button onclick="filterCourses('WDD')">WDD Courses</button>
+                <button onclick="filterCourses('CSE')">CSE Courses</button>
+            </div>
+            <div id="courses-list"></div>
+            <p id="label-credits">Total Credits: <span id="total-credits">0</span></p>
+        </section>
     </main>
     <footer>
-        <p id="year">©<span id="currentyear"></span> 🌴 WDD 131 🌴 Juan Martinez 🌴 Texas</p>
+        <div id="footer-top">
+            <p id="year">©<span id="currentyear"></span> 🌵 WDD 231 🌵 Juan Martinez 🌵 Texas</p>
+            <img src="images/Texas.jpg" alt="Texas Flag" id="flag">
+        </div>
         <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
     </footer>
+
 </body>
 
 </html>
