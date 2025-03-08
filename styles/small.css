@@ -61,9 +61,7 @@ header span {
     margin-top: 10px;
 }
 
-nav {
-    margin-top: 15px;
-}
+
 
 /* Ensure button is visible */
 #menu-toggle {
@@ -81,6 +79,18 @@ nav {
 #menu-toggle:hover {
     background-color: #ff9900;
     border-radius: 5px;
+}
+
+#menu-toggle::before {
+    content: "☰";
+}
+
+#menu-toggle.show::before {
+    content: "❌";
+}
+
+nav {
+    margin-top: 15px;
 }
 
 /* Hide menu by default */
