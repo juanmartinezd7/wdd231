@@ -148,7 +148,7 @@ main {
 
 /* DESKTOP STYLES - Large Screens */
 /* Large Screens - Always Show Menu */
-@media (min-width: 768px) {
+@media (min-width: 928px) {
     #menu-toggle {
         display: none;
         /* Hide menu button */

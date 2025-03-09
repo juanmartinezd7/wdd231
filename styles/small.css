@@ -45,10 +45,28 @@ header span {
     /* Prevents text from breaking into multiple lines */
 }
 
-#denton img {
-    width: 380px;
-    height: 380px;
+#denton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+#denton img {
+    width: 100%;
+    /* Adjusts width to fit container */
+    max-width: 300px;
+    /* Ensures it doesn't get too large */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+#denton span {
+    margin-top: 5px;
+    font-size: 1rem;
+    /* Adjust font size as needed */
+}
+
 
 #flag {
     width: 30px;
@@ -130,6 +148,11 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #ff9900;
     border-radius: 5px;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
 }
 
 #courses-list {
