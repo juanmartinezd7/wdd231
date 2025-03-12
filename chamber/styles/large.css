@@ -1,0 +1,143 @@
+/* larger.css - Styles for larger screens */
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* Wrap logo and text */
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style logo */
+header img {
+    width: 120px;
+    height: 130px;
+    border: 1px solid rgb(98, 103, 136);
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #222;
+    /* Dark background color */
+    padding: 10px 0;
+}
+
+/* Styling for the unordered list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for nav links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    /* Ensures proper padding clickability */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+
+
+/* Show menu when toggled */
+nav ul.show {
+    display: flex;
+    max-height: 500px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements on small screens */
+    align-items: center;
+    /* Center elements */
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    gap: 10px;
+    /* Space between elements */
+}
+
+/* Wrap first paragraph and image together */
+#footer-top {
+    display: flex;
+    align-items: center;
+    /* Align image and text in the center */
+    gap: 10px;
+    /* Space between text and image */
+}
+
+/* Adjust image size */
+#flag {
+    width: 40px;
+    /* Adjust as needed */
+    height: auto;
+}
+
+/* Ensure text and image are aligned properly */
+#year {
+    margin: 0;
+}
+
+
+/* --- DESKTOP STYLES --- */
+@media (min-width: 928px) {
+    header span {
+        font-size: 2rem !important;
+        /* Larger font for large screens */
+        color: #ff9900;
+        white-space: nowrap;
+    }
+
+    #menu-toggle {
+        display: none;
+        /* Hide menu toggle button */
+    }
+
+    nav ul {
+        display: flex !important;
+        /* Always show menu */
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 20px;
+        position: static;
+        max-height: unset;
+        background: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+}

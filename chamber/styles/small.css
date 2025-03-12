@@ -1,0 +1,170 @@
+/* small.css - Styles for small screens (default mobile-first design) */
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* Wrap logo and text */
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style logo */
+header img {
+    width: 120px;
+    height: 130px;
+    border: 1px solid rgb(98, 103, 136);
+    margin-right: 20px;
+}
+
+/* Style the Chamber name */
+header span {
+    font-size: 1rem !important;
+    /* Small font for small screens */
+    color: #ff9900;
+    white-space: nowrap;
+    display: block;
+    margin-top: 10px;
+}
+
+
+#flag {
+    width: 30px;
+    height: 20px;
+}
+
+
+/* Ensure button is visible */
+/* --- MOBILE STYLES (DEFAULT) --- */
+#menu-toggle {
+    display: block;
+    /* Show menu toggle button */
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+#menu-toggle:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+#menu-toggle::before {
+    content: "☰";
+}
+
+#menu-toggle.show::before {
+    content: "❌";
+}
+
+/* Ensure nav is positioned correctly */
+nav {
+    margin-left: auto;
+}
+
+
+/* Hide menu by default */
+nav ul {
+    display: none;
+    /* Hide menu by default */
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* Show menu when toggled on small screens */
+nav ul.show {
+    display: flex;
+    max-height: 500px;
+}
+
+/* Style nav links */
+nav ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+
+/* Prevents text from breaking into multiple lines */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements on small screens */
+    align-items: center;
+    /* Center elements */
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    gap: 10px;
+    /* Space between elements */
+}
+
+/* Wrap first paragraph and image together */
+#footer-top {
+    display: flex;
+    align-items: center;
+    /* Align image and text in the center */
+    gap: 10px;
+    /* Space between text and image */
+}
+
+/* Adjust image size */
+#flag {
+    width: 40px;
+    /* Adjust as needed */
+    height: auto;
+}
+
+/* Ensure text and image are aligned properly */
+#year {
+    margin: 0;
+}

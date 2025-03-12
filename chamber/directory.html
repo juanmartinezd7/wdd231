@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:tittle" content="WDD 231 - Chamber of Commerce" />
+    <meta property="og:type" content="WDD 231 Course Chamber Page" />
+    <meta property="og:image" content="https://www.tourtexas.com/content_images/DiscoverDenton-Header.jpg" />
+    <meta property="og:url" content="https://juanmartinezd7.github.io/wdd231/" />
+    <meta name="description" content="Juan Martinez Index page for WDD 231: Web Frontend Development 1 BYU-Pathway. 
+    Assignment to demonstrate prerequisite knowledge by applying HTML and CSS in the design anddevelopment of a home page. 
+    Also to apply learning activity concepts including JavaScript to provide some dynamic information.">
+    <meta name="author" content="Juan Martinez">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 927px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 928px)">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <link rel="icon" href="faviconD.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="images/apple-touch-icon.png" alt="Icon Photo" id="DentonLogo">
+            <span>Denton Chamber of Commerce</span>
+
+        </div>
+        <button id="menu-toggle"></button>
+        <nav>
+            <ul id="menu">
+                <li><a href="#DentonLogo" class="active">Home</a></li>
+                <li><a href="https://denton-chamber.org/">Chamber</a></li>
+                <li><a href="https://github.com/juanmartinezd7">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/juanmartinezd7/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="scripts/menu.js" defer></script>
+    <!--Placing the script before the body ensures the DOM loads first before JavaScript Runs-->
+
+    <main>
+
+    </main>
+    <footer>
+        <div id="footer-top">
+            <p id="year">©<span id="currentyear"></span> 🌵 WDD 231 🌵 Juan Martinez 🌵 Texas</p>
+            <img src="images/Texas.jpg" alt="Texas Flag" id="flag">
+        </div>
+        <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
+
+    </footer>
+
+</body>
+
+</html>
