@@ -1,0 +1,68 @@
+{
+  "members": [
+    {
+      "company_name": "The Dog Stop",
+      "address": "8135 Gateway Dr, Ste 500. Denton, TX 76206",
+      "phone number": "940-240-5555",
+      "website URL": "https://thedogstop.com/locations/texas/argyle/",
+      "imageurl": "https://thedogstop.com/wp-content/themes/theme/images/assets/the-dog-stop-letters.svg",
+      "membership_level": "1"
+    },
+    {
+      "company_name": "Win Kids",
+      "address": "3000 Waketon Rd. Denton,TX 76207",
+      "phone number": "972-355-9988",
+      "website URL": "https://www.winkids.com/",
+      "imageurl": "https://lirp.cdn-website.com/86313729/dms3rep/multi/opt/WinKids_Logo_Color_Outline-240w.png",
+      "membership_level": "3"
+    },
+    {
+      "company_name": "Ponder Pest Control",
+      "address": "3646 FM 2181 Denton, TX 76205",
+      "phone number": "940-231-0004",
+      "website URL": "https://ponderpestcontrol.com/",
+      "imageurl": "https://ponderpestcontrol.com/wp-content/uploads/2022/01/logo.png",
+      "membership_level": "2"
+    },
+    {
+      "company_name": "David Ryan Salon",
+      "address": "4151 Cross Timbers Rd. Ste 150. Denton, TX 76206",
+      "phone number": "972-691-0022",
+      "website URL": "https://davidryansalons.com/",
+      "imageurl": "https://static.spacecrafted.com/de355483799c45b1bda16e6c828b49fd/i/f017c48ed728473da145fe587af969eb/1/5feFb8zhrk/Untitled%20design-32.png",
+      "membership_level": "3"
+    },
+    {
+      "company_name": "LorentZ Automotive",
+      "address": "600 N. Mill St. Denton, TX 76207",
+      "phone number": "844-989-3287",
+      "website URL": "https://www.lorentzautoinc.com/",
+      "imageurl": "https://www.lorentzautoinc.com/Files/Images/logo.png",
+      "membership_level": "3"
+    },
+    {
+      "company_name": "Bistecca an Italian Steak House",
+      "address": "2300 Highland Village Rd. Denton, TX 76206",
+      "phone number": "972-318-0515",
+      "website URL": "https://www.bisteccasteakhouse.com/",
+      "imageurl": "https://static.wixstatic.com/media/83b3d8_4e8dd7da370d4137870acc10e22e0f95~mv2.png/v1/fill/w_365,h_114,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/The%20Grotto%20-%20Bistecca%20FINAL%20Logo%20(Transparent).png",
+      "membership_level": "3"
+    },
+    {
+      "company_name": "The Design House",
+      "address": "2303 Colorado Blvd. Denton, TX 76205",
+      "phone number": "940-220-2588",
+      "website URL": "https://thedesignhousedfw.com/",
+      "imageurl": "https://thedesignhousedfw.com/wp-content/uploads/2024/11/dsgnhs.webp",
+      "membership_level": "2"
+    },
+    {
+      "company_name": "Anderson Roofing & Contracting",
+      "address": "197 Stonewood Blvd. Denton, TX 76206",
+      "phone number": "972-318-1500",
+      "website URL": "https://andersonroofstexas.com/",
+      "imageurl": "https://andersonroofstexas.com/wp-content/uploads/2020/08/Anderson-Roofing-And-Construction-Texas.png",
+      "membership_level": "1"
+    }
+  ]
+}
