@@ -280,7 +280,7 @@ h3 {
 
 /* --- DESKTOP STYLES --- */
 @media (min-width: 928px) {
-    header h1 {
+    header span {
         font-size: 2rem !important;
         /* Larger font for large screens */
         color: #ff9900;
