@@ -45,10 +45,16 @@
 <body>
     <header>
         <div id="logo-container">
-            <img src="images/apple-touch-icon.png" alt="Icon Photo" id="DentonLogo">
+            <img src="images/apple-touch-icon.jpg" alt="Icon Photo" id="DentonLogo">
             <span>Denton Chamber Of Commerce</span>
         </div>
-        <button id="menu-toggle"></button>
+
+        <button id="menu-toggle" aria-label="Open menu" title="Menu">
+            <!--<span aria-hidden="true">☰</span>-->
+            <span class="visually-hidden">Menu</span>
+        </button>
+
+
         <nav>
             <ul id="menu">
                 <li><a href="#DentonLogo" class="active">Home</a></li>
@@ -59,15 +65,19 @@
         </nav>
     </header>
 
+
     <main>
         <h1>Denton Chamber Of Commerce</h1>
         <div class="container">
             <h2>Member Directory</h2>
-            <button id="toggle-view">Toggle View</button>
+            <div class="container">
+                <h1>Member Directory</h1>
+                <button id="toggle-view">Toggle View</button>
+                <div id="members-container" class="grid-view"></div>
+            </div>
             <div id="members-container" class="grid-view"></div>
         </div>
-
-        <script src="script.js"></script>
+        <script src="scripts/memberslist.js"></script>
     </main>
     <footer>
         <div class="address">

@@ -42,9 +42,15 @@ document.addEventListener("DOMContentLoaded", async function () {
         if (isGridView) {
             membersContainer.classList.add("grid-view");
             membersContainer.classList.remove("list-view");
+            toggleButton.setAttribute("aria-label", "Switch to list view");
+            toggleButton.setAttribute("title", "Switch to list view");
+            toggleButton.textContent = "🔲 Grid View"; // Optional: Icon indicator
         } else {
             membersContainer.classList.add("list-view");
             membersContainer.classList.remove("grid-view");
+            toggleButton.setAttribute("aria-label", "Switch to grid view");
+            toggleButton.setAttribute("title", "Switch to grid view");
+            toggleButton.textContent = "📃 List View"; // Optional: Icon indicator
         }
     }
 
