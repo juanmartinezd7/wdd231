@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title element -->
-    <title>Denton Chamber of Commerce | Business Directory</title>
+    <title>Denton Chamber of Commerce | Home Page</title>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Denton Chamber of Commerce | Business Directory" />
+    <meta property="og:title" content="Denton Chamber of Commerce | Home Page" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://juanmartinezd7.github.io/wdd231/chamber/images/DiscoverDenton.jpg" />
     <meta property="og:url" content="https://juanmartinezd7.github.io/wdd231/chamber/directory" />
@@ -29,7 +29,8 @@
     <!-- Scripts -->
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/memberslist.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/membercards.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" href="faviconD.ico">
@@ -40,7 +41,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
-
 
 <body>
     <header>
@@ -56,8 +56,8 @@
 
         <nav>
             <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class=active>Directory</a></li>
+                <li><a href="index.html" class=active>Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="joinpage.html">Join</a></li>
                 <li><a href="https://denton-chamber.org/">Chamber</a></li>
                 <li><a href="https://github.com/juanmartinezd7">GitHub Profile</a></li>
@@ -65,19 +65,31 @@
             </ul>
         </nav>
     </header>
-
-
     <main>
-        <h1>Denton Chamber Of Commerce</h1>
-        <div class="container">
-            <h2>Member Directory</h2>
-            <div class="container">
-                <h1>Member Directory</h1>
-                <button id="toggle-view">Toggle View</button>
-                <div id="members-container" class="grid-view"></div>
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="Hero Image">
+            <a href="joinpage.html" class="hero-button">Join</a>
+        </section>
+
+        <section class="cards-container">
+            <div>
+                <h2>Events <span id="events" class="cards-container">
+                        <p>Upcoming events in Denton.</p>
+                    </span> </span></h2>
+
+
             </div>
+            <div>
+                <h2>Denton, Texas Forecast <span id="weather-cards" class="cards-container"></span></h2>
+            </div>
+        </section>
+
+
+        <div class="container">
+            <h1>Business Members</h1>
+            <div id="card-container" class="card-container"></div>
         </div>
-        <script src="scripts/memberslist.js"></script>
+
     </main>
     <footer>
         <div class="address">

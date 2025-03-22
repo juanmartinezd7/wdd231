@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title element -->
-    <title>Denton Chamber of Commerce | Business Directory</title>
+    <title>Denton Chamber of Commerce | Join Page</title>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Denton Chamber of Commerce | Business Directory" />
+    <meta property="og:title" content="Denton Chamber of Commerce | Join Page" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://juanmartinezd7.github.io/wdd231/chamber/images/DiscoverDenton.jpg" />
     <meta property="og:url" content="https://juanmartinezd7.github.io/wdd231/chamber/directory" />
@@ -26,10 +26,11 @@
     <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 927px)">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 928px)">
 
+
     <!-- Scripts -->
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/memberslist.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" href="faviconD.ico">
@@ -40,7 +41,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
-
 
 <body>
     <header>
@@ -57,28 +57,57 @@
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class=active>Directory</a></li>
-                <li><a href="joinpage.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="joinpage.html" class="active">Join</a></li>
                 <li><a href="https://denton-chamber.org/">Chamber</a></li>
                 <li><a href="https://github.com/juanmartinezd7">GitHub Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/juanmartinezd7/">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
-
-
     <main>
-        <h1>Denton Chamber Of Commerce</h1>
-        <div class="container">
-            <h2>Member Directory</h2>
-            <div class="container">
-                <h1>Member Directory</h1>
-                <button id="toggle-view">Toggle View</button>
-                <div id="members-container" class="grid-view"></div>
+        <div class="container-join">
+            <h2 id="h2-membership">Membership Application Form</h2>
+
+            <form id="membershipForm">
+                <label for="businessName">Business Name *</label>
+                <input type="text" id="businessName" name="businessName" required />
+
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required />
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required />
+
+                <label for="address">Business Address</label>
+                <input type="text" id="address" name="address" />
+
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website" />
+
+                <label for="membershipType">Membership Type *</label>
+                <select id="membershipType" name="membershipType" required>
+                    <option value="">-- Select --</option>
+                    <option value="basic">Basic Membership</option>
+                    <option value="premium">Premium Membership</option>
+                    <option value="sponsor">Sponsor Level</option>
+                </select>
+
+                <label for="notes">Additional Comments</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <div class="confirmation" id="confirmationMessage">
+                ✅ Thank you for your application! We'll be in touch soon.
             </div>
         </div>
-        <script src="scripts/memberslist.js"></script>
     </main>
+
     <footer>
         <div class="address">
             <h3>Denton Chamber of Commerce</h3>
@@ -99,6 +128,10 @@
             <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
         </div>
     </footer>
+
+
+
+
 
 </body>
 
