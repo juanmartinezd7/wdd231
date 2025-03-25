@@ -5,7 +5,7 @@
       "address": "8135 Gateway Dr, Ste 500. Denton, TX 76206",
       "phone number": "940-240-5555",
       "website URL": "https://thedogstop.com/locations/texas/argyle/",
-      "imageurl": "images/the-dog-stop.jpg",
+      "imageurl": "images/pets.jpg",
       "membership_level": "Member"
     },
     {
@@ -13,7 +13,7 @@
       "address": "3000 Waketon Rd. Denton,TX 76207",
       "phone number": "972-355-9988",
       "website URL": "https://www.winkids.com/",
-      "imageurl": "images/winkids_logo.jpg",
+      "imageurl": "images/kids.jpg",
       "membership_level": "Gold"
     },
     {
@@ -21,7 +21,7 @@
       "address": "3646 FM 2181 Denton, TX 76205",
       "phone number": "940-231-0004",
       "website URL": "https://ponderpestcontrol.com/",
-      "imageurl": "images/pestcontrol.jpg",
+      "imageurl": "images/poison.jpg",
       "membership_level": "Silver"
     },
     {
@@ -29,7 +29,7 @@
       "address": "4151 Cross Timbers Rd. Ste 150. Denton, TX 76206",
       "phone number": "972-691-0022",
       "website URL": "https://davidryansalons.com/",
-      "imageurl": "images/davidryan.jpg",
+      "imageurl": "images/salon.jpg",
       "membership_level": "Gold"
     },
     {
@@ -45,7 +45,7 @@
       "address": "2300 Highland Village Rd. Denton, TX 76206",
       "phone number": "972-318-0515",
       "website URL": "https://www.bisteccasteakhouse.com/",
-      "imageurl": "images/bistecca.jpg",
+      "imageurl": "images/retaurant.jpg",
       "membership_level": "Gold"
     },
     {
@@ -61,7 +61,7 @@
       "address": "197 Stonewood Blvd. Denton, TX 76206",
       "phone number": "972-318-1500",
       "website URL": "https://andersonroofstexas.com/",
-      "imageurl": "images/anderson.jpg",
+      "imageurl": "images/window.jpg",
       "membership_level": "Member"
     }
   ]
