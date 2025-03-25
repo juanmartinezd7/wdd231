@@ -13,7 +13,7 @@
       "address": "3000 Waketon Rd. Denton,TX 76207",
       "phone number": "972-355-9988",
       "website URL": "https://www.winkids.com/",
-      "imageurl": "images/WinKids_Logo.jpg",
+      "imageurl": "images/winkids_logo.jpg",
       "membership_level": "Gold"
     },
     {
@@ -21,7 +21,7 @@
       "address": "3646 FM 2181 Denton, TX 76205",
       "phone number": "940-231-0004",
       "website URL": "https://ponderpestcontrol.com/",
-      "imageurl": "images/PestControl.jpg",
+      "imageurl": "images/pestcontrol.jpg",
       "membership_level": "Silver"
     },
     {
@@ -29,7 +29,7 @@
       "address": "4151 Cross Timbers Rd. Ste 150. Denton, TX 76206",
       "phone number": "972-691-0022",
       "website URL": "https://davidryansalons.com/",
-      "imageurl": "images/DavidRyan.jpg",
+      "imageurl": "images/davidryan.jpg",
       "membership_level": "Gold"
     },
     {
@@ -45,7 +45,7 @@
       "address": "2300 Highland Village Rd. Denton, TX 76206",
       "phone number": "972-318-0515",
       "website URL": "https://www.bisteccasteakhouse.com/",
-      "imageurl": "images/Bistecca.jpg",
+      "imageurl": "images/bistecca.jpg",
       "membership_level": "Gold"
     },
     {
@@ -61,7 +61,7 @@
       "address": "197 Stonewood Blvd. Denton, TX 76206",
       "phone number": "972-318-1500",
       "website URL": "https://andersonroofstexas.com/",
-      "imageurl": "images/Anderson.jpg",
+      "imageurl": "images/anderson.jpg",
       "membership_level": "Member"
     }
   ]

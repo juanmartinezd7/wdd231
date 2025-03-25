@@ -97,6 +97,8 @@ nav ul {
     flex-direction: column;
     background-color: #444;
     position: absolute;
+    z-index: 9999;
+    /* Very high to stay on top */
     top: 130px;
     right: 0;
     width: 100%;
@@ -248,33 +250,41 @@ button:hover {
     text-decoration: underline;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
 .hero {
-    position: static;
-    background-size: cover;
-    background-position: center;
-    display: grid;
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 0;
+    position: relative;
+}
+
 .hero-button {
-    padding: 15px 30px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 16px;
     background-color: #2b00ff;
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 5px;
+    z-index: 1;
+    /* Ensures it's above the image */
     transition: background 0.3s ease;
 }
 
 .hero-button:hover {
     background-color: #e65c00;
 }
+
 
 .container-join {
     max-width: 700px;
