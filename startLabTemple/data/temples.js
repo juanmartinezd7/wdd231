@@ -212,7 +212,7 @@ export const temples = [
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
     },
     {
-        "number": "31",
+        "number": "162",
         "name": "Rome Italy Temple",
         "dedicated": "March, 2019",
         "person": "Russell M. Nelson",
