@@ -20,7 +20,16 @@ header {
 /* Wrap logo and text */
 #logo-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* So the top of img and text align */
+}
+
+#text-and-menu {
+    display: flex;
+    flex-direction: column;
+    /* Stack span and button */
+    gap: 5px;
+    /* Space between span and button */
 }
 
 /* Style logo */
@@ -137,6 +146,7 @@ nav ul li a:hover {
     content: "📍";
     /* just a wayfinding symbol for the user */
 }
+
 
 main {
     font-family: Arial, sans-serif;
