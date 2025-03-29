@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://juanmartinezd7.github.io/wdd231/chamber/directory" />
 
     <!-- Other Metadata -->
-    <meta name="description" content="Juan Martinez Index page for WDD 231: Web Frontend Development 1 BYU-Pathway. 
+    <meta name="description" content="Juan Martinez Join page for WDD 231: Web Frontend Development 1 BYU-Pathway. 
     Assignment to demonstrate prerequisite knowledge by applying HTML and CSS in the design and development of a home page. 
     Also to apply learning activity concepts including JavaScript to provide some dynamic information.">
 
@@ -23,9 +23,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 927px)">
-    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 928px)">
-
+    <link rel="stylesheet" href="styles/joinlarge.css" media="screen and (min-width: 928px)">
+    <link rel="stylesheet" href="styles/joinsmall.css" media="screen and (max-width: 927px)">
 
     <!-- Scripts -->
     <script src="scripts/menu.js" defer></script>
@@ -67,33 +66,27 @@
     </header>
     <main>
         <div class="container-join">
-            <h2 id="h2-membership">Membership Application Form</h2>
 
-            <form id="membershipForm">
+            <form id="membershipForm" method="get" action="thankyou.html">
+                <h2 id="h2-membership">Membership Application Form</h2>
 
                 <label for="firstName">First Name *</label>
-                <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name"
-                    required />
+                <input type="text" id="firstName" name="firstName" required />
 
                 <label for="lastName">Last Name *</label>
-                <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name"
-                    required />
+                <input type="text" id="lastName" name="lastName" required />
 
                 <label for="organizationalTitle">Organizational Title</label>
-                <input type="text" id="organizationalTitle" name="organizationalTitle" title="Organizational Title"
-                    autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" />
+                <input type="text" id="organizationalTitle" name="organizationalTitle" />
 
                 <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" title="Email Address" autocomplete="email"
-                    placeholder="example@domain.com" required />
+                <input type="email" id="email" name="email" required />
 
                 <label for="mobilePhone">Mobile Phone Number *</label>
-                <input type="tel" id="mobilePhone" name="mobilePhone" title="Mobile Phone Number" autocomplete="tel"
-                    required />
+                <input type="tel" id="mobilePhone" name="mobilePhone" required />
 
                 <label for="organizationName">Business/Organization Name *</label>
-                <input type="text" id="organizationName" name="organizationName" title="Organization Name"
-                    autocomplete="organization" required />
+                <input type="text" id="organizationName" name="organizationName" required />
 
                 <label for="membershipLevel">Membership Level *</label>
                 <select id="membershipLevel" name="membershipLevel" required>
@@ -107,13 +100,86 @@
                 <label for="notes">Business/Organization Description</label>
                 <textarea id="notes" name="notes" rows="4"></textarea>
 
+                <!-- Hidden timestamp input -->
+                <input type="hidden" id="formTimestamp" name="formTimestamp" />
+
                 <button type="submit">Submit Application</button>
             </form>
+            <!--</div>-->
+            <div class="membership-cards">
+                <h2 id="h2-membership-cards">Membership Levels</h2>
+                <div class="card" id="card-np">
+                    <h3>NP Membership</h3>
+                    <p>Perfect for nonprofits starting out.</p>
+                    <a href="#" class="modal-trigger" data-modal="modal-np">Learn More</a>
+                </div>
+                <div class="card" id="card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Includes event access and listings.</p>
+                    <a href="#" class="modal-trigger" data-modal="modal-bronze">Learn More</a>
+                </div>
+                <div class="card" id="card-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Boost visibility with featured ads.</p>
+                    <a href="#" class="modal-trigger" data-modal="modal-silver">Learn More</a>
+                </div>
+                <div class="card" id="card-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Top-tier benefits and promotions.</p>
+                    <a href="#" class="modal-trigger" data-modal="modal-gold">Learn More</a>
+                </div>
+            </div>
 
-            <div class="confirmation" id="confirmationMessage">
-                ✅ Thank you for your application! We'll be in touch soon.
+            <!-- Modals -->
+            <div class="modal" id="modal-np">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>NP Membership Benefits</h2>
+                    <ul>
+                        <li>Access to networking events</li>
+                        <li>Basic listing on directory</li>
+                        <li>Email newsletter updates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-bronze">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Bronze Membership Benefits</h2>
+                    <ul>
+                        <li>All NP benefits</li>
+                        <li>Discounted training workshops</li>
+                        <li>Featured newsletter mentions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-silver">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Silver Membership Benefits</h2>
+                    <ul>
+                        <li>All Bronze benefits</li>
+                        <li>Homepage spotlight promotion</li>
+                        <li>Premium event access</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-gold">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Gold Membership Benefits</h2>
+                    <ul>
+                        <li>All Silver benefits</li>
+                        <li>Custom advertising packages</li>
+                        <li>Exclusive invites to leadership roundtables</li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </main>
 
     <footer>
