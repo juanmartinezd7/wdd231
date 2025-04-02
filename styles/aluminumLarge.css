@@ -1,0 +1,114 @@
+/* Base styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#menu a:hover,
+#menu a.active {
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#priceAluminum {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#history {
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social a {
+    margin: 0 10px;
+}
+
+footer .year p {
+    margin: 5px 0;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu li {
+        margin: 10px 0;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    footer .social a {
+        display: inline-block;
+        margin: 10px 0;
+    }
+}

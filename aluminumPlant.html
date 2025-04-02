@@ -4,10 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sioux Aluminum Plant</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/aluminumLarge.css">
 </head>
 
 <body>
+    <header>
+        <div id="addressHeader">
+            <div id="text-and-menu">
+                <h3>401 Arrow Ln, Chief City, NE 76867</h3>
+            </div>
+        </div>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Employment</a></li>
+                <li><a href="#">Job Board</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="logo">
+            <img src="images/sioux.jpeg" alt="Sioux Aluminum Logo">
+            <h1>Sioux Aluminum</h1>
+            <h4>Since 1971</h4>
+        </section>
+
+        <section id="callus">
+            <h3>Call Us! 428-224-8256</h3>
+            <a href="http://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="http://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Icon"></a>
+        </section>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Extrusions</a></li>
+                <li><a href="#">Anodizing</a></li>
+                <li><a href="#">Finish</a></li>
+                <li><a href="#">Fabrication</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="Hero Image">
+            <a href="info.html" class="hero-button">More Info.</a>
+        </section>
+
+        <section id="priceAluminum">
+            <h3>Aluminum Price</h3>
+            <h4>Contact us for a free consultation on your project needs</h4>
+            <a href="quote.html" class="hero-button">Request a Quote</a>
+        </section>
+
+        <div id="history">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quam at. Obcaecati temporibus iusto
+                pariatur, ducimus assumenda, magni atque eum, ex nihil illo quis aliquid ullam labore esse at
+                dignissimos?</p>
+            <h4>Serving America since 1971</h4>
+        </div>
+
+        <div class="services">
+            <h2 id="h2-ourservices">Our Services</h2>
+            <div class="card" id="card-extrusions">
+                <h3>Extrusions</h3>
+                <p>We will extrude according to your needs.</p>
+                <a href="#" class="modal-trigger" data-modal="modal-np">Learn More</a>
+            </div>
+            <div class="card" id="card-anodizing">
+                <h3>Anodizing</h3>
+                <p>We offer aluminum anodizing.</p>
+                <a href="#" class="modal-trigger" data-modal="modal-bronze">Learn More</a>
+            </div>
+            <div class="card" id="card-finish">
+                <h3>Finish</h3>
+                <p>We offer brushing and buffing services.</p>
+                <a href="#" class="modal-trigger" data-modal="modal-silver">Learn More</a>
+            </div>
+            <div class="card" id="card-fabrication">
+                <h3>Fabrication</h3>
+                <p>We offer top of the line CNC operations.</p>
+                <a href="#" class="modal-trigger" data-modal="modal-gold">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal" id="modal-np">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Extrusions Services</h2>
+                <ul>
+                    <li>Custom Extrusions</li>
+                    <li>12" Presses</li>
+                    <li>40 ft length</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Other modals here -->
+
+    </main>
+
+    <footer>
+        <div class="address">
+            <h3>Sioux Extrusions</h3>
+            <p>401 Arrow Ln</p>
+            <p>Chief City, NE 76867</p>
+            <p>Info@siouxaluminum.com</p>
+            <p>(428)-224-8256</p>
+        </div>
+        <div class="social">
+            <a href="http://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="http://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Icon"></a>
+        </div>
+        <div class="year">
+            <p id="year">©<span id="currentyear"></span> SIOUX EXTRUSIONS</p>
+            <p id="modified">Last Date Modified: <span id="lastdatemodified"></span></p>
+        </div>
+    </footer>
 
 </body>
 
