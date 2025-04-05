@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title element -->
+    <title>Sioux Extrusions | Home Page</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sioux Extrusions | Home Page" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://juanmartinezd7.github.io/wdd231/chamber/images/dentoncity.jpg" />
+    <meta property="og:url" content="https://juanmartinezd7.github.io/wdd231/chamber/directory" />
+
+    <!-- Other Metadata -->
+    <meta name="description" content="Juan Martinez Project Home page for WDD 231: Web Frontend Development 1 BYU-Pathway. 
+    Assignment to demonstrate prerequisite knowledge by applying HTML and CSS in the design and development of a home page. 
+    Also to apply learning activity concepts including JavaScript to provide some dynamic information.">
+
+    <meta name="author" content="Juan Martinez">
+
+    <title>Sioux Aluminum Plant</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/aluminumLarge.css">
+    <!-- Scripts -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/aluminumModal.js" defer></script>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="addressHeader">
+            <div id="text-and-menu">
+                <h3>401 Arrow Ln, Chief City, NE 76867</h3>
+            </div>
+        </div>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Employment</a></li>
+                <li><a href="#">Job Board</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="center-wrapper">
+            <section class="logo">
+                <img src="images/sioux.jpeg" alt="Sioux Aluminum Logo">
+                <h1>Sioux Extrusions</h1>
+                <h4>Leading The Aluminum Extrusions Industry Since 1971</h4>
+            </section>
+
+            <section id="callus">
+                <h3>Call Us! 428-224-8256</h3>
+                <a href="http://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+                <a href="http://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Icon"></a>
+            </section>
+        </div>
+
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Extrusions</a></li>
+                <li><a href="#">Anodizing</a></li>
+                <li><a href="#">Finish</a></li>
+                <li><a href="#">Fabrication</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-layout">
+            <div class="top-section">
+                <section class="hero">
+                    <div class="hero-image-wrapper">
+                        <img src="images/hero-image.jpg" alt="Hero Image">
+                        <a href="info.html" class="hero-button">More Info.</a>
+                    </div>
+                </section>
+
+
+                <section id="priceAluminum">
+                    <div>
+                        <h3>Aluminum Price</h3>
+                        <h4>April 2025: $1.5649/Lb</h4>
+                        <h4>Contact us for a free consultation on your project needs</h4>
+                        <a href="quote.html" class="quote-button">Request a Quote</a>
+                    </div>
+                </section>
+            </div>
+
+            <div id="history">
+                <p>One of the leading Extrusions Manufacturers engaged in producing premium quality products.</p>
+                <p>We are known in the industry for having a strong commitment to excellence.</p>
+                <h4>Serving America since 1971</h4>
+            </div>
+        </div>
+
+
+        <div class="services">
+            <h2 id="h2-ourservices">Our Services</h2>
+
+            <div class="card-container">
+                <div class="card" id="card-extrusions">
+                    <h3>Extrusions</h3>
+                    <p>We will extrude according to your needs.</p>
+                    <a href="#" class="modal-trigger" data-modal="modal-ext">Learn More</a>
+                </div>
+                <div class="card" id="card-anodizing">
+                    <h3>Anodizing</h3>
+                    <p>We offer aluminum anodizing.</p>
+                    <a href="#" class="modal-trigger" data-modal="modal-ano">Learn More</a>
+                </div>
+                <div class="card" id="card-finish">
+                    <h3>Finish</h3>
+                    <p>We offer brushing and buffing services.</p>
+                    <a href="#" class="modal-trigger" data-modal="modal-fin">Learn More</a>
+                </div>
+                <div class="card" id="card-fabrication">
+                    <h3>Fabrication</h3>
+                    <p>We offer top of the line CNC operations.</p>
+                    <a href="#" class="modal-trigger" data-modal="modal-fab">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal" id="modal-ext">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Extrusions Services</h2>
+                <ul>
+                    <li>Custom Extrusions</li>
+                    <li>12" Presses</li>
+                    <li>40 ft length</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-ano">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Anodizing Services</h2>
+                <ul>
+                    <li>In-House Anodizing</li>
+                    <li>Top of the line equipment</li>
+                    <li>Top Quality</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-fin">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Finish Services</h2>
+                <ul>
+                    <li>Top Quality Finish Services</li>
+                    <li>Buffing</li>
+                    <li>Brushing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-fab">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Fabrication Services</h2>
+                <ul>
+                    <li>Modern CNC Machines</li>
+                    <li>Cut-Back</li>
+                    <li>Drilling</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="address">
+            <h3>Sioux Extrusions</h3>
+            <p>401 Arrow Ln</p>
+            <p>Chief City, NE 76867</p>
+            <p>Info@siouxextrusions.com</p>
+            <p>(428)-224-8256</p>
+        </div>
+        <div class="social">
+            <a href="http://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="http://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Icon"></a>
+        </div>
+        <div class="year">
+            <p id="year">©<span id="currentyear"></span> SIOUX EXTRUSIONS</p>
+            <p id="modified">Last Date Modified: <span id="lastdatemodified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
