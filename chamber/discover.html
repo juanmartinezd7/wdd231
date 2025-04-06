@@ -23,19 +23,24 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 927px)">
-    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 928px)">
+    <!-- Small screen styles: default (mobile-first) -->
+    <link rel="stylesheet" href="styles/discoverSmall.css">
+    <!-- Medium screens (768px and up) -->
+    <link rel="stylesheet" href="styles/discoverMedium.css" media="screen and (min-width: 768px)">
+    <!-- Large screens (1024px and up) -->
+    <link rel="stylesheet" href="styles/discoverLarge.css" media="screen and (min-width: 1250px)">
+
+
 
     <!-- Scripts -->
-    <script src="scripts/menu.js" defer></script>
+    <script src=" scripts/menu.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/membercards.js" defer></script>
+    <script src="scripts/discoverPlaces.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" href="favicond.ico">
 
-    <!-- Fonts -->
+    <!-- Fonts -->script
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -56,9 +61,10 @@
 
         <nav>
             <ul id="menu">
-                <li><a href="index.html" class=active>Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class=active>Discover</a></li>
                 <li><a href="https://denton-chamber.org/">Chamber</a></li>
                 <li><a href="https://github.com/juanmartinezd7">GitHub Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/juanmartinezd7/">LinkedIn</a></li>
@@ -66,8 +72,10 @@
         </nav>
     </header>
     <main>
-
-
+        <div class="containerPlaces">
+            <h1>8 Fun things to do in Denton</h1>
+            <div id="card-containerPlaces" class="card-containerPlaces"></div>
+        </div>
     </main>
     <footer>
         <div class="address">

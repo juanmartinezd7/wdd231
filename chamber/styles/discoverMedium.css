@@ -1,0 +1,321 @@
+/* medium.css - Styles for tablets */
+
+
+
+/**********************************/
+@media (min-width: 768px) {
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #333;
+        color: white;
+        padding: 15px 20px;
+    }
+
+    /* Wrap logo and text */
+    #logo-container {
+        display: flex;
+        align-items: flex-start;
+        /* So the top of img and text align */
+    }
+
+    #text-and-menu {
+        display: flex;
+        flex-direction: column;
+        /* Stack span and button */
+        gap: 5px;
+        /* Space between span and button */
+    }
+
+    /* Style logo */
+    header img {
+        width: 120px;
+        height: 130px;
+        border: 1px solid rgb(98, 103, 136);
+        margin-right: 5px;
+    }
+
+    /* Style the Chamber name */
+    header span {
+        font-size: 1rem !important;
+        /* Small font for small screens */
+        color: #eee;
+        white-space: nowrap;
+        display: block;
+        margin-top: 10px;
+    }
+
+
+    #flag {
+        width: 30px;
+        height: 20px;
+    }
+
+
+    /* Ensure button is visible */
+    /* --- MOBILE STYLES (DEFAULT) --- */
+    #menu-toggle {
+        display: inline-block;
+        font-size: 1em;
+        background-color: #1100ff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+    }
+
+    #menu-toggle:hover {
+        background-color: #0056b3;
+    }
+
+    #menu-toggle span {
+        font-size: 1.8em;
+    }
+
+    #menu-toggle.show span {
+        content: "❌";
+    }
+
+    #menu-toggle::before {
+        content: "☰";
+    }
+
+    #menu-toggle.show::before {
+        content: "❌";
+    }
+
+
+
+    /* Ensure nav is positioned correctly */
+    nav {
+        margin-left: auto;
+    }
+
+
+    /* Hide menu by default */
+    nav ul {
+        display: none;
+        /* Hide menu by default */
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        z-index: 9999;
+        /* Very high to stay on top */
+        top: 130px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        transition: max-height 0.3s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    /* Show menu when toggled on small screens */
+    nav ul.show {
+        display: flex;
+        max-height: 500px;
+    }
+
+    /* Style nav links */
+    nav ul li {
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        display: block;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        background-color: #ff9900;
+        border-radius: 5px;
+    }
+
+    .active::before {
+        content: "📍";
+        /* just a wayfinding symbol for the user */
+    }
+
+
+    main {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+
+    .card-containerPlaces {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        max-width: 600px;
+        margin: 10px auto;
+        display: grid;
+        grid-template-areas:
+            "picture name"
+            "picture description"
+            "picture info";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        background: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+
+    /* First two cards side-by-side */
+    .card--half {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .card-picturePlace {
+        grid-area: picture;
+    }
+
+    .card-name {
+        grid-area: name;
+    }
+
+    .card-description {
+        grid-area: description;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    .card-info {
+        grid-area: info;
+    }
+
+    .card-picturePlace img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .card-info a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        text-decoration: none;
+        background: #0036b3;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .card-info a:hover {
+        background: #0056b3;
+    }
+
+    /* Prevents text from breaking into multiple lines */
+    footer {
+        background-color: #333;
+        padding: 1rem 10px;
+
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 15px;
+    }
+
+    .social a {
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .5s ease;
+
+    }
+
+    .social a img {
+        height: 20px;
+        width: auto;
+    }
+
+    .social a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+    /* Wrap first paragraph and image together */
+    .year {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 1rem 10px;
+    }
+
+    /* Adjust image size */
+    #flag {
+        width: 40px;
+        height: auto;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .address p {
+        margin: 0;
+        /* Removes default margin from paragraphs */
+        line-height: 1.2;
+        /* Adjusts spacing between lines */
+    }
+
+    #modified {
+        color: #eee;
+    }
+
+    .address p,
+    h3 {
+        color: #eee;
+    }
+
+
+    /* Ensure text and image are aligned properly */
+    #year {
+        margin: 0;
+        color: #eee;
+    }
+}
