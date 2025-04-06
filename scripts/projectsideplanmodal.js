@@ -1,4 +1,3 @@
-
 document.querySelectorAll('.modal-trigger').forEach(button => {
     button.addEventListener('click', function (e) {
         e.preventDefault();
@@ -21,4 +20,3 @@ window.addEventListener('click', function (e) {
         }
     });
 });
-
