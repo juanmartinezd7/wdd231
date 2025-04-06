@@ -26,6 +26,16 @@ header img {
     margin-right: 20px;
 }
 
+/*.visit-message {
+    background-color: #eef6ff;
+    border-left: 4px solid #0077cc;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    font-size: 1rem;
+}*/
+
+
 nav {
     background-color: #222;
     /* Dark background color */
@@ -291,8 +301,8 @@ nav ul li {
         grid-template-columns: 1fr 1fr;
     }
 
-    .card:hover {
-        background-color: black;
+    .card-picturePlace img:hover {
+        background-color: transparent;
         transform: translateY(-5px);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         transition: all 0.3s ease;
