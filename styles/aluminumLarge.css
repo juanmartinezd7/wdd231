@@ -7,6 +7,53 @@ body {
     box-sizing: border-box;
 }
 
+.project {
+    background-color: #fff;
+
+}
+
+.project h1 {
+    color: #333;
+}
+
+.project p,
+h3,
+li,
+span {
+    color: #333;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.project #wireframe {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+
+.project .frame {
+    position: relative;
+    width: 45%;
+}
+
+.project .frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project .frame span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+
+
 body,
 html {
     margin: 0;
