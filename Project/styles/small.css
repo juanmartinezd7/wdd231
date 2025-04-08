@@ -83,15 +83,6 @@ header {
     gap: 20px;
 }
 
-.hero {
-    flex: 1.5;
-}
-
-#priceAluminum {
-    flex: 1.5;
-}
-
-
 #priceAluminum div {
     text-align: center;
     padding: 20px;
@@ -112,33 +103,27 @@ header {
     display: inline-block;
 }
 
+
+#history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
 .hero-image-wrapper {
     position: relative;
+    max-width: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
+    padding-left: 10px;
+    /* Add space on the left */
+    box-sizing: border-box;
+    /* Ensure padding doesn't overflow */
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    padding: 5px;
-    padding-left: 15px;
     display: block;
-    transition: width 0.3s ease;
-    /* Smooth resizing */
-}
-
-@media (min-width: 1200px) {
-    .hero-image-wrapper {
-        width: 100%;
-    }
-
-    .hero img {
-        width: 100%;
-        /* Now 100% of the wider container */
-        max-width: none;
-    }
 }
 
 
@@ -157,11 +142,25 @@ header {
     white-space: nowrap;
 }
 
-#history {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f3f3f3;
+@media (max-width: 768px) {
+    .hero-button {
+        position: static;
+        /* Remove absolute positioning */
+        transform: none;
+        display: inline-block;
+        margin: 10px auto 0;
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+
+    .hero-image-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+
 
 .services {
     padding: 20px;
