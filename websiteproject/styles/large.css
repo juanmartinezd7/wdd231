@@ -47,6 +47,34 @@ header {
     text-align: center;
 }
 
+#jobsmenu {
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+}
+
+#jobsmenu li {
+    display: inline;
+    margin: 0 35px;
+}
+
+#jobsmenu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #2b00ff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#jobsmenu a:hover,
+#jobsmenu a.active {
+    font-weight: bold;
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
 #menu {
     list-style: none;
     padding: 15px;
