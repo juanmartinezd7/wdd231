@@ -146,7 +146,7 @@ header {
 }
 
 .about {
-    h1 {
+    h3 {
         display: block;
         text-align: center;
     }
