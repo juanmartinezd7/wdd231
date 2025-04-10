@@ -60,15 +60,18 @@ header {
 }
 
 #menu a {
-    color: #7ff0e3;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
+    background-color: #2b00ff;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #menu a:hover,
 #menu a.active {
     font-weight: bold;
-    background-color: #ff9900;
+    background-color: #0056b3;
     border-radius: 5px;
 }
 
@@ -108,6 +111,58 @@ header {
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
+}
+
+#priceAluminum .quote-button:hover {
+    background-color: #0056b3;
+}
+
+.about {
+    h1 {
+        display: block;
+        text-align: center;
+    }
+
+    form {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 25px;
+        background-color: #2b00ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .thank-you {
+        display: none;
+        text-align: center;
+        font-size: 1.3rem;
+        color: green;
+        margin-top: 20px;
+    }
 }
 
 
@@ -162,10 +217,13 @@ header {
     white-space: nowrap;
 }
 
+.hero-button:hover {
+    background-color: #0056b3;
+}
+
 @media (max-width: 768px) {
     .hero-button {
         position: static;
-        /* Remove absolute positioning */
         transform: none;
         display: inline-block;
         margin: 10px auto 0;
@@ -178,7 +236,12 @@ header {
         flex-direction: column;
         align-items: center;
     }
+
+    .top-section {
+        flex-direction: column;
+    }
 }
+
 
 
 
@@ -310,6 +373,10 @@ header {
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
+}
+
+#aboutpics .quoteabout-button:hover {
+    background-color: #0056b3;
 }
 
 .about {

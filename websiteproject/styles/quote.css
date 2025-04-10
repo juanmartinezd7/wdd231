@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#menu {
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+}
+
+#menu li {
+    display: inline;
+    margin: 0 35px;
+}
+
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #2b00ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu a:hover,
+#menu a.active {
+    font-weight: bold;
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.row>div {
+    flex: 1;
+}
+
+.checkbox-group,
+.radio-group {
+    margin-top: 10px;
+}
+
+.checkbox-group label,
+.radio-group label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #2b00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.thank-you {
+    display: none;
+    font-size: 1.3rem;
+    color: green;
+    text-align: center;
+    margin-top: 30px;
+}

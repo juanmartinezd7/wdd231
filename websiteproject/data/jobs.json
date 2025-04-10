@@ -1,0 +1,52 @@
+{
+    "jobs": [
+        {
+            "position": "Cutback Saw Operator",
+            "location": "O'Fallon, MO",
+            "hourly_pay": "22.00",
+            "description": "Verify order length of metal in Epics, confirm die profile to work order, Verify cut tolerance.",
+            "department": "Industrial and Manufacturing",
+            "apply": "index.html"
+        },
+        {
+            "position": "Extrusions Furnace Operator",
+            "location": "O'Fallon, MO",
+            "hourly_pay": "22.00",
+            "description": "Operation of an overhead crane to move and gather dies, Check tool stack for proper sizes.",
+            "department": "Industrial and Manufacturing",
+            "apply": "index.html"
+        },
+        {
+            "position": "Extrusions Saw Help",
+            "location": "O'Fallon, MO",
+            "hourly_pay": "19.00",
+            "description": "Assist in the operation of stacking equipment from the cold saws. Verify part lengths meet order expectations.",
+            "department": "Industrial and Manufacturing",
+            "apply": "index.html"
+        },
+        {
+            "position": "General Labor Packer",
+            "location": "O'Fallon, MO",
+            "hourly_pay": "20.00",
+            "description": "Receive instructions and work orders for the job from machine operator, Plan details of working procedure and gather tools and materials required.",
+            "department": "Industrial and Manufacturing",
+            "apply": "index.html"
+        },
+        {
+            "position": "Maintenance Technician",
+            "location": "O'Fallon, MO",
+            "hourly_pay": "35.00",
+            "description": "Ensures operation of machinery and mechanical equipment by completing preventive maintenance requirements on engines, motors, pneumatic tools, conveyor systems, and production machines",
+            "department": "Maintenance",
+            "apply": "index.html"
+        },
+        {
+            "position": "Shipping Forklift Operator",
+            "location": "O'Fallon, MO",
+            "hourly_pay": "25.00",
+            "description": "Transport all supplies and/or finished materials throughout departments, Load and unloads trailers with raw and finished materials",
+            "department": "Shipping",
+            "apply": "index.html"
+        }
+    ]
+}

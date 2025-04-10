@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apply Now</title>
+    <link rel="stylesheet" href="styles/apply.css">
+    <script src="scripts/apply.js" defer></script>
+
+</head>
+
+<body>
+
+    <h1>Apply for: <span id="jobTitle"></span></h1>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <form id="application-form">
+
+        <input type="hidden" id="job" name="job">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage">
+        Thank you for applying! We’ll be in touch soon.
+    </div>
+
+
+</body>
+
+</html>

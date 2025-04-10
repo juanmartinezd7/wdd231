@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Request Form</title>
+    <link rel="stylesheet" href="styles/quote.css">
+    <script src="scripts/quote.js" defer></script>
+
+</head>
+
+<body>
+
+    <h1>Sioux Extrusions Request a Quote</h1>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <form id="quoteForm">
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company" required>
+
+        <label>Name</label>
+        <div class="row">
+            <div>
+                <input type="text" placeholder="First" name="firstName" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Last" name="lastName" required>
+            </div>
+        </div>
+
+        <label>Address</label>
+        <input type="text" placeholder="Street" name="street" required>
+        <div class="row">
+            <div><input type="text" placeholder="City" name="city" required></div>
+            <div><input type="text" placeholder="State" name="state" required></div>
+            <div><input type="text" placeholder="Zip" name="zip" required></div>
+        </div>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="quoteDate">Quote Due Date:</label>
+        <input type="date" id="quoteDate" name="quoteDate">
+
+        <label for="quantity">Estimated Annual Quantity:</label>
+        <input type="text" id="quantity" name="quantity">
+
+        <label>Alloy & Temper</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="alloy" value="6063T-5"> 6063T-5</label>
+            <label><input type="checkbox" name="alloy" value="6063T-6"> 6063T-6</label>
+            <label><input type="checkbox" name="alloy" value="6463T-5"> 6463T-5</label>
+            <label><input type="checkbox" name="alloy" value="6463T-6"> 6463T-6</label>
+            <label><input type="checkbox" name="alloy" value="6005AT-5"> 6005AT-5</label>
+            <label><input type="checkbox" name="alloy" value="6005AT-6"> 6005AT-6</label>
+            <label><input type="checkbox" name="alloy" value="6061T-5"> 6061T-5</label>
+            <label><input type="checkbox" name="alloy" value="6061T-6"> 6061T-6</label>
+        </div>
+
+        <label for="linealLength">Lineal Length:</label>
+        <input type="text" id="linealLength" name="linealLength">
+
+        <label>Fabrication:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="fabrication" value="Yes"> Yes</label>
+            <label><input type="radio" name="fabrication" value="No"> No</label>
+        </div>
+
+        <label>New Part Or Existing Part:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="partStatus" value="New Part"> New Part</label>
+            <label><input type="checkbox" name="partStatus" value="Existing Part"> Existing Part</label>
+        </div>
+
+        <label for="partFunction">Part Function:</label>
+        <input type="text" id="partFunction" name="partFunction">
+
+        <label for="otherInfo">Other Information:</label>
+        <textarea id="otherInfo" name="otherInfo" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage">
+        Thank you for your Request, we will contact you soon.
+    </div>
+
+
+
+</body>
+
+</html>
