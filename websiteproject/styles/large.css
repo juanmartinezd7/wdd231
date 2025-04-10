@@ -216,52 +216,50 @@ header {
     background-color: #0056b3;
 }
 
-.about {
-    h3 {
-        display: block;
-        text-align: center;
-    }
+.about h3 {
+    display: block;
+    text-align: center;
+}
 
-    form {
-        max-width: 500px;
-        margin: auto;
-    }
+.about form {
+    max-width: 400px;
+    margin: auto;
+}
 
-    label {
-        display: block;
-        margin-top: 15px;
-    }
+.about label {
+    display: block;
+    margin-top: 15px;
+}
 
-    input,
-    textarea {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
+.about input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
-    button {
-        margin-top: 20px;
-        padding: 10px 25px;
-        background-color: #2b00ff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+.about button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #2b00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    button:hover {
-        background-color: #0056b3;
-    }
+.about button:hover {
+    background-color: #0056b3;
+}
 
-    .thank-you {
-        display: none;
-        text-align: center;
-        font-size: 1.3rem;
-        color: green;
-        margin-top: 20px;
-    }
+.thank-you {
+    display: none;
+    text-align: center;
+    font-size: 1.3rem;
+    color: green;
+    margin-top: 20px;
 }
 
 #history {
