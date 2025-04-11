@@ -47,6 +47,14 @@
             "description": "Transport all supplies and/or finished materials throughout departments, Load and unloads trailers with raw and finished materials",
             "department": "Shipping",
             "apply": "index.html"
+        },
+        {
+            "position": "Shipping Coordinator",
+            "location": "O'Fallon, MO",
+            "hourly_pay": "30.00",
+            "description": "Coordinate with customer sales representatives and production departments to prepare and schedule shipments to our customers nation wide",
+            "department": "Shipping",
+            "apply": "index.html"
         }
     ]
 }
